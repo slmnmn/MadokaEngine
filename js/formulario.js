@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("age").value = data.age;
                 document.getElementById("city").value = data.city;
                 document.getElementById("status").value = data.status;
+
                 document.getElementById("image_url").value = data.image_url;
+
             })
             .catch(error => console.error("Error al cargar los datos:", error));
     }
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const age = document.getElementById("age").value;
         const city = document.getElementById("city").value;
         const status = document.getElementById("status").value;
+        const contract_date = document.getElementById("contract_date").value;
         const image_url = document.getElementById("image_url").value;
 
         const method = id ? "PUT" : "POST";
@@ -33,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ name, age, city, status, image_url })
+            body: JSON.stringify({ name, age, city, status, contract_date, image_url })
         })
         .then(response => response.json())
         .then(() => {
