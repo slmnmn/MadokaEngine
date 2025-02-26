@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar/Editar Chica Mágica</title>
+    <link rel="stylesheet" href="css/formato.css">
+</head>
+<body>
+    <h1>Agregar/Editar Chica Mágica</h1>
+
+    <!-- Formulario para crear o editar -->
+    <div class="form-container">
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="number" id="age" placeholder="Edad" required>
+        <input type="text" id="city" placeholder="Ciudad" required>
+        <input type="url" id = "image_url" placeholder="Imagen (url)" required>
+        <select id="status">
+            <option value="Activa">Activa</option>
+            <option value="Desaparecida">Desaparecida</option>
+            <option value="Rescatada">Rescatada por la Ley de los Ciclos</option>
+        </select>
+        <div id = "guardarDiv">
+            <button id="guardarMona" class="btn-save">Guardar</button>
+        </div>
+    </div>
+
+    <!-- Boton para volver -->
+    <div class="back-button-container">
+        <a href="index.html" class="btn-back">← Volver a la Lista</a>
+    </div>
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>

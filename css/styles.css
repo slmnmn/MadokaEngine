@@ -1,0 +1,121 @@
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    background-color: #f4f4f4;
+}
+
+h1 { 
+    color: #333; 
+}
+
+.filters { 
+    margin: 10px auto; 
+    max-width: 500px; 
+    display: flex; 
+    gap: 10px; 
+}
+
+input, select {
+    padding: 10px;
+    width: 100%;
+    border: 10px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.profile:hover { 
+    transform: scale(1.05); 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botón agregar */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #218838;
+}
+
+
+.btn-save:hover {
+    
+    background: #218838;
+}
+
+/* Botón editar */
+.btn-edit {
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 5px;
+}
+
+.btn-edit:hover {
+    background: #0056b3;
+}
+
+/* Botón eliminar */
+.btn-delete {
+    background: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 5px;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+
