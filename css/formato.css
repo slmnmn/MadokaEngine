@@ -21,6 +21,7 @@ h1 {
 input[type="text"],
 input[type="number"],
 input[type="url"],
+input[type="date"],
 select {
     width: 100%;
     padding: 10px;

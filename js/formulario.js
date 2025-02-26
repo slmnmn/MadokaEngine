@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("age").value = data.age;
                 document.getElementById("city").value = data.city;
                 document.getElementById("status").value = data.status;
-
+                document.getElementById("contract_date").value = data.contract_date;
                 document.getElementById("image_url").value = data.image_url;
 
             })

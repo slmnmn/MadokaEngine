@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)  # para permitir peticiones desde el frontend
 
 # Conexion al servidor
-client = MongoClient('mongodb+srv://simonrinconr05:CONTRASENA@cluster0.f2lvh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+client = MongoClient('mongodb+srv://simonrinconr05:uTADEO2025@cluster0.f2lvh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 db = client["Madoka"]
 collection = db["MadokaGirls"]
 
